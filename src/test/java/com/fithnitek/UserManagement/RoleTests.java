@@ -26,7 +26,7 @@ public class RoleTests {
 	private ERole name;
 	@Test
 	public void testCreateFirstProfil() {
-		Role admin = new Role( name.Livreur,"manage livriasion");	
+		Role admin = new Role( name.Livreur,"manage livriasion      gngfngf");	
 			Role profilSaved = repo.save(admin);
 			
 	}
