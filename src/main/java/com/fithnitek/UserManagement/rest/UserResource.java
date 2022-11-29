@@ -1,6 +1,7 @@
 package com.fithnitek.UserManagement.rest;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.fithnitek.UserManagement.model.FileUploadUtil;
 import com.fithnitek.UserManagement.model.Role;
 import com.fithnitek.UserManagement.model.User;
 import com.fithnitek.UserManagement.service.IUserService;

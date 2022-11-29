@@ -53,9 +53,11 @@ public class UserRessourceTests {
 
 	}
 	
-	  @Test public void deleteEmployeeAPI() throws Exception { mockmvc.perform(
-	  MockMvcRequestBuilders.delete("/api/users/{id}", "annabi.mabrouka99@gmail.com") )
-	  .andExpect(status().isAccepted()); }
+	/*
+	 * @Test public void deleteEmployeeAPI() throws Exception { mockmvc.perform(
+	 * MockMvcRequestBuilders.delete("/api/users/{id}",
+	 * "annabi.mabrouka99@gmail.com") ) .andExpect(status().isAccepted()); }
+	 */
 	 
 	/*
 	 * @Test public void getEmployeeByIdAPI() throws Exception { mockmvc.perform(
@@ -65,11 +67,13 @@ public class UserRessourceTests {
 	 * .andExpect(MockMvcResultMatchers.jsonPath("$.employeeId").value(1)); }
 	 */
 	
-	  @Test public void createUserAPI() throws Exception { mockmvc.perform(
-	  MockMvcRequestBuilders .post("/api/users/") .content(asJsonString(new User()))
-	  .contentType(MediaType.APPLICATION_JSON) .accept(MediaType.APPLICATION_JSON))
-	  .andExpect(status().isCreated())
-	  .andExpect(MockMvcResultMatchers.jsonPath("").exists()); }
+	/*
+	 * @Test public void createUserAPI() throws Exception { mockmvc.perform(
+	 * MockMvcRequestBuilders .post("/api/users/") .content(asJsonString(new
+	 * User())) .contentType(MediaType.APPLICATION_JSON)
+	 * .accept(MediaType.APPLICATION_JSON)) .andExpect(status().isCreated())
+	 * .andExpect(MockMvcResultMatchers.jsonPath("").exists()); }
+	 */
 	  
 	  
 	  
